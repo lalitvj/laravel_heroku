@@ -1,5 +1,5 @@
 <?php
-namespace App\Http\Controllers;
+//namespace App\Http\Controllers;
 use App\Conversations\ExampleConversation;
 use Illuminate\Http\Request;
 use Mpociot\BotMan\BotMan;
