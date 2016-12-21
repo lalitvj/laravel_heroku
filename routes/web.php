@@ -1,4 +1,8 @@
 <?php
+namespace App\Http\Controllers;
+use App\Conversations\ExampleConversation;
+use Illuminate\Http\Request;
+use Mpociot\BotMan\BotMan;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,5 +19,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/botman', function () {
+    $botman = app('botman');
+    $botman->verifyServices('secret_facebook_verify');
+});
 //Dummu changes in route for olde running code commit
 //
