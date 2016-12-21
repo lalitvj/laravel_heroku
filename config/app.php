@@ -103,7 +103,7 @@ return [
     |
     */
 
-    'key' => env('APP_KEY'),
+    'key' => env('/7vfTADBgtp7uRjNYvm2bnqSiq6RyN33Qga27OY1JzI='),
 
     'cipher' => 'AES-256-CBC',
 
@@ -177,6 +177,9 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        
+        //Botman 
+        Mpociot\BotMan\BotManServiceProvider::class,
 
     ],
 
@@ -225,6 +228,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'BotMan' => Mpociot\BotMan\Facades\BotMan::class,
 
     ],
 
