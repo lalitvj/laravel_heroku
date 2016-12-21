@@ -13,7 +13,7 @@ class BotManController extends Controller {
      */
     public function handle() {
         $botman = app('botman');
-        $botman->verifyServices('secret_facebook_verify');
+        //$botman->verifyServices('secret_facebook_verify');
         // Simple respond method
         $botman->hears('Hello', function (BotMan $bot) {
             $bot->reply('Hi there :)');
