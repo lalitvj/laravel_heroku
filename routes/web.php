@@ -19,9 +19,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/botman', function () {
-    $botman = app('botman');
-    $botman->verifyServices('secret_facebook_verify');
-});
+//Route::get('/botman', function () {
+//    $botman = app('botman');
+//    $botman->verifyServices('secret_facebook_verify');
+//});
 //Dummu changes in route for olde running code commit
 //
+Route::match(['get', 'post'], '/botman', 'BotManController@handle');
