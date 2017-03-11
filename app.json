@@ -1,0 +1,23 @@
+{
+  "name": "laravel_heroku",
+  "scripts": {
+  },
+  "env": {
+    "APP_KEY": {
+      "required": true
+    },
+    "FACEBOOK_TOKEN": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/php"
+    }
+  ]
+}
